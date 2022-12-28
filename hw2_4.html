@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4</title>
+</head>
+
+<body>
+
+    <script>
+        // Разложить введенное положительное целое число на тысячи, сотни, десятки и единицы
+        let layoutNumber = Number(prompt('Введите положительное целое число от 1 до 9.999.999'));
+        if ((layoutNumber >= 1) && (layoutNumber <= 9999999) && (layoutNumber != "") && (layoutNumber % 1 === 0)) {
+            alert(`${layoutNumber} состоит из ${Math.floor(layoutNumber / 1000000 % 10)} млн. ${Math.floor(layoutNumber / 100000 % 10)}${Math.floor(layoutNumber / 10000 % 10)}${Math.floor(layoutNumber / 1000 % 10)}  тыс.  ${Math.floor(layoutNumber / 100 % 10)}  сот. ${Math.floor(layoutNumber / 10 % 10)}  дес. ${Math.floor(layoutNumber % 10)}  ед.`);
+        } else {
+            alert('ошибка, надо ввести положительное целое число от 1 до 9.999.999');
+        }
+
+    </script>
+</body>
+
+</html>

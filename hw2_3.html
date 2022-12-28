@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>З3дание 3</title>
+</head>
+
+<body>
+
+    <script>
+        // В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью).
+
+        let day = Number(prompt('Введите день месяца'));
+        if ((day >= 1) && (day <= 31) && (day != '')) {
+            if (day <= 10) {
+                alert(` ${day} день месяца лежит в 1 декаде месяца`);
+            }
+            else if (day <= 20) {
+                alert(` ${day} день месяца лежит во 2 декаде месяца`);
+            }
+            else {
+                alert(` ${day} день месяца лежит в 3 декаде месяца`);
+            }
+        }
+        else {
+            alert(` ${day}  не день месяца, введите день месяца правильно `);
+        }
+
+    </script>
+</body>
+
+</html>
